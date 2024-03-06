@@ -1,0 +1,48 @@
+<nav class="sidebar">
+  <div class="sidebar-header">
+
+    <!--- Logo -->
+    <a routerLink="/" class="sidebar-brand zarvis-logo">
+      <img src="assets/images/logo.png" alt="logo">
+    </a>
+    <a routerLink="/" class="sidebar-brand zarvis-label">
+      <span>ZARVIS</span>
+    </a>
+
+  </div>
+  <div class="sidebar-body">
+
+    <!--- Sidemenu start -->
+
+    <ul class="sidebar-nav metismenu" id="sidebar-menu" #sidebarMenu>
+      <ng-container *ngFor="let item of menuItems">
+        <li class="nav-item" *ngIf="!item.isTitle">
+          <a class="nav-link nav-link-ref" *ngIf="!hasItems(item)" [attr.data-parent]="item.parentId">
+            <img class="link-icon" src="assets/images/{{item.icon}}.png" alt="logo">
+            <span class="link-title"> {{ item.label }}</span>
+            <img class="link-active-state" style="display: none;" src="assets/images/Ellipse.png">
+          </a>
+        </li>
+      </ng-container>
+    </ul>
+
+    <!--- Sidemenu end -->
+
+    <div class="sidebar-footer">
+      <div class="sidebar-footer-logo">
+        <div class="sidebar-footer-background">
+          <img src="assets/images/security-safe.png" alt="logo">
+        </div>
+      </div>
+      <div class="sidebar-footer-title">
+        <span>Keep you safe!</span>
+      </div>
+      <div class="sidebar-footer-content">
+        <span>Update your security password, keep your account safe!</span>
+      </div>
+      <div class="sidebar-footer-action">
+        <span>Update privacy</span>
+      </div>
+    </div>
+  </div>
+</nav>

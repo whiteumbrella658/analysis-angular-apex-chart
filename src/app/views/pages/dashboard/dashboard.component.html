@@ -1,0 +1,283 @@
+<div class="dashboard-body">
+  <div class="dashboard-nav row">
+    <div class="col-md-4 col-xl-4">
+      <span class="dashboard-hearder">Hello Kruluz Utsman</span>
+      <div class="dashboard-hearder-number">4.45 PM 19 Jan 2022</div>
+    </div>
+    <div class="col-md-5 col-xl-5">
+      <form class="dashboard-search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <img src="assets/images/search.png">
+      </form>
+    </div>
+    <div class="nav-item nav-notifications col-md-2 col-xl-2">
+      <a class="nav-link" id="notificationDropdown">
+        <img src="assets/images/notification.png">
+      </a>
+    </div>
+    <div class="nav-item nav-profile col-md-1 col-xl-1" >
+      <a class="nav-link" id="profileDropdown">
+        <span class="user-name">Kruluz Utsman</span>
+        <img class="user-avatar" src="assets/images/user-avatar.png" alt="profile">
+      </a>
+    </div>
+</div>
+
+<div class="row">
+  <div class="col-12 col-xl-12 stretch-card">
+    <div class="row flex-grow-1">
+      <div class="col-md-3 grid-margin stretch-card">
+        <div class="card">
+          <div class="row">
+            <div class="col-md-6 labels">
+                <div class="card-avatar">
+                  <img style="background: #FFCC40;" class="bitcoin-avat" src="assets/images/b.png" alt="coin">
+                </div>
+                <div class="card-property card-arrow">
+                  <span class="card-title mb-0">BTC<img class="arrow-img" src="assets/images/arrow.png">USD</span>
+                </div>
+                <div class="card-price">9784.79</div>
+                <div class="card-property card-percent">
+                    <img  src="assets/images/increase_icon.png" class="icon-sm mb-1">
+                    <span>7.2%</span>
+                </div>
+            </div>
+            <div class="col-md-6">
+              <div class="row chart-content">
+                <apx-chart
+                  [series]="customersChartOptions.series"
+                  [chart]="customersChartOptions.chart"
+                  [colors]="customersChartOptions.colors"
+                  [xaxis]="customersChartOptions.xaxis"
+                  [stroke]="customersChartOptions.stroke"
+                  [markers]="customersChartOptions.markers"
+                ></apx-chart>
+              </div>
+            </div>
+          </div>            
+        </div>
+      </div>
+      <div class="col-md-3 grid-margin stretch-card">
+        <div class="card">
+          <div class="row">
+            <div class="col-md-6 labels">
+                <div class="card-avatar">
+                  <img style="background: #783EFD;" class="bitcoin-avat" src="assets/images/l.png" alt="coin">
+                </div>
+                <div class="card-property card-arrow">
+                  <span class="card-title mb-0">LTD<img class="arrow-img" src="assets/images/arrow.png">USD</span>
+                </div>
+                <div class="card-price">8741.19</div>
+                <div class="card-property card-percent">
+                    <img src="assets/images/dis_icon.png" class="icon-sm mb-1">
+                    <span>5.2%</span>
+                </div>
+            </div>
+            <div class="col-md-6">
+              <div class="row chart-content">
+                <apx-chart
+                  [series]="customersChartOptions.series"
+                  [chart]="customersChartOptions.chart"
+                  [colors]="customersChartOptions.colors1"
+                  [xaxis]="customersChartOptions.xaxis"
+                  [stroke]="customersChartOptions.stroke"
+                  [markers]="customersChartOptions.markers"
+                ></apx-chart>
+              </div>
+            </div>
+          </div>            
+        </div>
+      </div>
+      <div class="col-md-3 grid-margin stretch-card">
+        <div class="card">
+          <div class="row">
+            <div class="col-md-6 labels">
+                <div class="card-avatar">
+                  <img style="background-color: #FE8F66;;" class="bitcoin-avat" src="assets/images/eth.png" alt="coin">
+                </div>
+                <div class="card-property card-arrow">
+                  <span class="card-title mb-0">ETM<img class="arrow-img" src="assets/images/arrow.png">USD</span>
+                </div>
+                <div class="card-price">4567.16</div>
+                <div class="card-property card-percent">
+                    <img  src="assets/images/increase_icon.png" class="icon-sm mb-1">
+                    <span>6.5%</span>
+                </div>
+            </div>
+            <div class="col-md-6">
+              <div class="row chart-content">
+                <apx-chart
+                  [series]="customersChartOptions.series"
+                  [chart]="customersChartOptions.chart"
+                  [colors]="customersChartOptions.colors"
+                  [xaxis]="customersChartOptions.xaxis"
+                  [stroke]="customersChartOptions.stroke"
+                  [markers]="customersChartOptions.markers"
+                ></apx-chart>
+              </div>
+            </div>
+          </div>            
+        </div>
+      </div>
+      <div class="col-md-3 grid-margin stretch-card">
+        <div class="card">
+          <div class="row">
+            <div class="col-md-6 labels">
+                <div class="card-avatar">
+                  <img style="background-color: #311D05;" class="bitcoin-avat" src="assets/images/bnb.png" alt="coin">
+                </div>
+                <div class="card-property card-arrow">
+                  <span class="card-title mb-0">BNB<img class="arrow-img" src="assets/images/arrow.png">USD</span>
+                </div>
+                <div class="card-price">6547.79</div>
+                <div class="card-property card-percent">
+                    <img  src="assets/images/increase_icon.png" class="icon-sm mb-1">
+                    <span>7.2%</span>
+                </div>
+            </div>
+            <div class="col-md-6">
+              <div class="row chart-content">
+                <apx-chart
+                  [series]="customersChartOptions.series"
+                  [chart]="customersChartOptions.chart"
+                  [colors]="customersChartOptions.colors"
+                  [xaxis]="customersChartOptions.xaxis"
+                  [yaxis]="customersChartOptions.yaxis"
+                  [stroke]="customersChartOptions.stroke"
+                  [markers]="customersChartOptions.markers"
+                ></apx-chart>
+              </div>
+            </div>
+          </div>            
+        </div>
+      </div>
+    </div>
+  </div>
+</div> <!-- row -->
+
+<div class="row">
+  <div class="col-md-9 grid-margin stretch-chart">
+    <div class="card overflow-hidden" style="border-radius: 16px;">
+      <div class="row card-body">
+        <div class="chart-header-bar">
+          <div class="col-md-8 chart-title">
+            <div class="card-title mb-0">Market Overview</div>
+            <span class="card-price-content">7.2141,997.5 (25%)</span>
+          </div>
+          <div class="col-md-4 action-btn-group" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-primary">All</button>
+            <button type="button" class="btn btn-outline-primary d-none d-md-block">1M</button>
+            <button type="button" class="btn btn-outline-primary">6M</button>
+            <button type="button" class="btn btn-outline-primary">1Y</button>
+            <button type="button" class="btn btn-outline-primary">YTD</button>
+          </div>
+        </div>
+        <div class="flot-wrapper Market-Overview">
+          <apx-chart
+            [series]="revenueChartOptions.series"
+            [chart]="revenueChartOptions.chart"
+            [colors]="revenueChartOptions.colors"
+            [grid]="revenueChartOptions.grid"
+            [xaxis]="revenueChartOptions.xaxis"
+            [yaxis]="revenueChartOptions.yaxis"
+            [markers]="revenueChartOptions.markers"
+            [stroke]="revenueChartOptions.stroke"
+          >
+        </apx-chart>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3 grid-margin stretch-chart-content">
+    <div class="card" style="height: 498px; border-radius: 16px;">
+      <div class="card-body">
+        <div class="balance-header">
+          <div class="balance-title"><span>Balances</span></div>
+          <div class="balance-add">+</div>
+        </div>
+        <div class="balance-dollar"><span class="dollar-single">$</span><span class="dollar-label">Dollar</span></div>
+        <div class="balance-value"><span class="value-label">9784.79</span></div>
+        <div class="balance-card">
+          <div class="card-one">
+            <img class="first-card" src="assets/images/Card.png" alt="profile">
+          </div>
+          <div class="card-two">
+            <img class="second-card" src="assets/images/Card.png" alt="profile">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> <!-- row -->
+
+<div class="row">
+  <div class="col-md-9 grid-margin card-table">
+    <div class="card" style="border-radius: 16px;">
+      <div class="card-body">
+        <div class="card-table-title">
+          <span>Recent Activities</span>
+        </div>
+        <div class="table-responsive">
+          <table class="table table-hover mb-0">
+            <tbody>
+              <tr>
+                <td><div class="table-avatar">
+                  <img style="background: #FFCC40; border-radius: 6px !important;" class="bitcoin-avat" src="assets/images/b.png" alt="coin">
+                </div></td>
+                <td class="table-center">Bitcoin</td>
+                <td class="table-center">10:45:16 AM</td>
+                <td class="table-center">+1545,00</td>
+                <td class="table-complete">Completed</td>
+              </tr>
+              <tr>
+                <td><div class="table-avatar">
+                  <img style="background: #783EFD; border-radius: 6px !important;" class="bitcoin-avat" src="assets/images/l.png" alt="coin">
+                </div></td>
+                <td class="table-center">Ethereum</td>
+                <td class="table-center">10:45:16 AM</td>
+                <td class="table-center">+1545,00</td>
+                <td class="table-painding">Painding</td>
+              </tr>
+              <tr>
+                <td><div class="table-avatar">
+                  <img style="background-color: #FE8F66; border-radius: 6px !important;" class="bitcoin-avat" src="assets/images/eth.png" alt="coin">
+                </div></td>
+                <td class="table-center">LTC</td>
+                <td class="table-center">10:45:16 AM</td>
+                <td class="table-center">+1545,00</td>
+                <td class="table-complete">Completed</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div> 
+    </div>
+  </div>
+  <div class="col-md-3 grid-margin stretch-chart-content">
+    <div class="card" style="height: 301px; border-radius: 16px;">
+      <div class="card-body">
+        <div class="member-header">
+          <div class="member-title"><span>Team</span></div>
+        </div>
+        <div class="team-card">
+          <div class="team-one">
+            <img class="member-card" src="assets/images/total.png" alt="profile">
+          </div>
+          <div>
+            <div class="team-total">Total admin</div>
+            <div class="total-label">6</div>
+          </div>
+        </div>
+        <div class="team-card">
+          <div class="team-two">
+            <img class="member-card" src="assets/images/team.png" alt="profile">
+          </div>
+          <div>
+            <div class="team-member">Team member</div>
+            <div class="team-label">12</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> <!-- row -->
